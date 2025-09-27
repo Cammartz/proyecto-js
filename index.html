@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Menú de Películas</title>
 </head>
+
 <body>
     <h1>Películas por ver</h1>
 
+    <form id="movieForm">
+        <div>
+            <label>Nombre:</label>
+            <input type="text" id="movieName" required />
+        </div>
+
+        <div>
+            <label>Género:</label>
+            <input type="text" id="movieType" required />
+        </div>
+
+        <div>
+            <label>Descripción:</label>
+            <input type="text" id="movieDescription" required />
+        </div>
+
+        <button type="submit">Agregar Película</button>
+    </form>
+
+    <div id="movieContainer"></div>
+
     <script src="./app.js"></script>
 </body>
+
 </html>
